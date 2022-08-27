@@ -1,6 +1,12 @@
 import React from 'react'
 
-const Child = (props) => {
+type ChildProps = {
+  incrementHandler: () => void;
+  decrementHandler: () => void;
+  count: number;
+}
+
+const Child = (props: ChildProps) => {
   return (
     <div className="component">
       <p>Child</p>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Child = (props) => {
+const Child = () => {
   return (
     <div className="component">
       <p>Child</p>

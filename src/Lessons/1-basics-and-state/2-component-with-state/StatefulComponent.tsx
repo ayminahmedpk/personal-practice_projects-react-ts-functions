@@ -4,6 +4,7 @@ import { useState } from 'react';
 const StatefulComponent = () => {
 
   const [count, setCount] = useState(0);
+  // setCount type: React.Dispatch<React.SetStateAction<number>>
 
   // setCount using accepting function rather than object, similar to setState
   // better for operations based on previous values

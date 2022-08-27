@@ -1,7 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 
-const Child = (props) => {
+type ChildProps = {
+  overridden: string;
+  numberProp: number;
+  notProvided?: string;
+  stringProp?: string;
+}
+
+const Child = (props: ChildProps) => {
   return (
     <div className="component">
       <p>Default prop    : {props.notProvided}</p>
