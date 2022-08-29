@@ -10,11 +10,14 @@ import {
   increment ,
   decrement ,
   reset     ,
-} from './Reducer/MyActionCreators'
+} from './Reducer/ActionCreators'
 
 const Parent = () => {
 
   const [state, dispatch] = useReducer(MyReducer, initialState);
+  // Inferred types:
+  // const state: MyReducerState
+  // const dispatch: React.Dispatch<MyReducerActions>
 
   return (
     <div className="component">
