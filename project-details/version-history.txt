@@ -1,7 +1,11 @@
 
 
+0.1.5:
+  - custom hooks (two typing solutions)
+
+
 0.1.4:
-  -useReducer - passing dispatch as a prop (clean)
+  - useReducer - passing dispatch as a prop (clean)
 
 
 0.1.3:
