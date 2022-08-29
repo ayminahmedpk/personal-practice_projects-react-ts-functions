@@ -12,8 +12,8 @@ const Parent = () => {
   const decrement = () => {setCount(prevCount => prevCount - 1);};
   const increment = () => {setCount(prevCount => prevCount + 1);};
 
-  const writeTextOne = (event) => {setTextOne(event.target.value);};
-  const writeTextTwo = (event) => {setTextTwo(event.target.value);};
+  const writeTextOne = (event: React.ChangeEvent<HTMLInputElement>) => {setTextOne(event.target.value);};
+  const writeTextTwo = (event: React.ChangeEvent<HTMLInputElement>) => {setTextTwo(event.target.value);};
 
 
   // 2. This isn't right, as the 'texts' props is an object, and even if its

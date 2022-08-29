@@ -1,6 +1,10 @@
 import React from 'react'
 
-const Child = (props) => {
+type ChildProps = {
+  texts: {textOne:string; textTwo:string;};
+}
+
+const Child: React.FC<ChildProps> = (props) => {
   return (
     <div className='component'>
         <p>Child</p>

@@ -10,7 +10,7 @@ const Parent = () => {
   const decrement = () => {setCount(prevCount => prevCount - 1);};
   const increment = () => {setCount(prevCount => prevCount + 1);};
 
-  const writeText = (event) => {setText(event.target.value);};
+  const writeText = (event: React.ChangeEvent<HTMLInputElement>) => {setText(event.target.value);};
 
   return (
       <div className='component'>

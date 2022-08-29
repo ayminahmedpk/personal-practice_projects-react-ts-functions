@@ -1,6 +1,11 @@
 import React from 'react'
 
-const Child = (props) => {
+type ChildProps = {
+  text      : string;
+  writeText : (event: React.ChangeEvent<HTMLInputElement>) => void;
+}
+
+const Child: React.FC<ChildProps> = (props) => {
   return (
     <div className='component'>
         <p>Child</p>

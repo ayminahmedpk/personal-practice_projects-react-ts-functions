@@ -12,7 +12,7 @@ const Parent = () => {
 
   // const writeText = (event) => {setText(event.target.value);};
   // 2. To solve this, send a memoized handler instead, using useCallback:
-  const writeText = useCallback((event) => {setText(event.target.value);}, []);
+  const writeText = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {setText(event.target.value);}, []);
 
   return (
       <div className='component'>
