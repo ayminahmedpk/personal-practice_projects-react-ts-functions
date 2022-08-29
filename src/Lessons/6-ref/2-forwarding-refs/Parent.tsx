@@ -5,7 +5,7 @@ import Child from './Child';
 
 const Parent = () => {
   
-  const inputRef = useRef(null);
+  const inputRef = useRef({} as HTMLInputElement);
 
   return (
     <div className='component'>

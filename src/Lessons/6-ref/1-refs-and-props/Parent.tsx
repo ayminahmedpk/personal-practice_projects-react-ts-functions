@@ -5,7 +5,15 @@ import Child from './Child';
 
 const Parent = () => {
   
-  const inputRef = useRef(null);
+  // const inputRef = useRef(null);
+
+  // didn't work
+  // const inputRef = useRef({} as React.RefObject<HTMLInputElement>);
+  
+  // inferred type of prop
+  // const inputRef = useRef({} as const inputRef: React.MutableRefObject<HTMLInputElement>); // didn't work
+
+  const inputRef = useRef({} as HTMLInputElement);
 
   useEffect(() => {inputRef.current.focus();}, []);
 

@@ -1,7 +1,11 @@
 import React from 'react'
 
-const Child = (props) => {
-  
+type ChildProps = {
+  inputRef: React.MutableRefObject<HTMLInputElement>;
+}
+
+const Child:React.FC<ChildProps> = (props) => {
+
   return (
     <div className='component'>
       <p>Child</p>
