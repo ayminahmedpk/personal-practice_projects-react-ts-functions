@@ -1,4 +1,7 @@
 
+import { Reducer } from 'react';
+
+import { MyReducerActions } from './MyActionCreators';
 
 import {
   WRITE,
@@ -7,19 +10,27 @@ import {
   RESET
 } from './MyActionTypes';
 
+type MyReducerState = {
+  textValue: string;
+  count: number;
+}
+
 export const initialState = {
   textValue: '[default]',
   count: 0,
 }
 
-export const MyReducer = (state, action) => {
+export const MyReducer: Reducer<MyReducerState, MyReducerActions> = (state, action) => {
   switch(action.type) {
     
     case WRITE:
-      return {
-        ...state,
-        textValue: action.payload,
+      if('payload' in action) {
+        return {
+          ...state,
+          textValue: action.payload,
+        }
       }
+      else {return state};
 
     case INCREMENT:
       return {

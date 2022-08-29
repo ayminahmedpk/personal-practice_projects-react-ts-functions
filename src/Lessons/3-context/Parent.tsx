@@ -10,4 +10,4 @@ const Parent = () => {
   )
 }
 
-export default Parent
+export default Parent;

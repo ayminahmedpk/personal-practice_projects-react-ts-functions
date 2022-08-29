@@ -1,7 +1,7 @@
-import LessonRoot20 from "../Lessons/1-basics-and-state/7-state-defined-later-cleaner/LessonRoot20";
+import LessonRoot8 from "../Lessons/4-useReducer/1-useReducer-local/LessonRoot8";
 
 const App = () => (
-    <LessonRoot20/>
+    <LessonRoot8/>
 )
 
 export default App;
