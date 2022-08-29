@@ -1,7 +1,7 @@
-import LessonRoot8 from "../Lessons/4-useReducer/1-useReducer-local/LessonRoot8";
+import LessonRoot9 from "../Lessons/4-useReducer/2-useReducer-props/LessonRoot9";
 
 const App = () => (
-    <LessonRoot8/>
+    <LessonRoot9/>
 )
 
 export default App;

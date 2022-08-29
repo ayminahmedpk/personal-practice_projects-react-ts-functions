@@ -9,7 +9,15 @@ import {
   reset     ,
 } from './Reducer/MyActionCreators'
 
-const Child = ({count, textValue, dispatch}) => {
+import { MyReducerActions } from '../1-useReducer-local/Reducer/ActionTypes'
+
+type ChildProps = {
+  count     : number;
+  textValue : string;
+  dispatch  : React.Dispatch<MyReducerActions>;
+}
+
+const Child: React.FC<ChildProps> = ({count, textValue, dispatch}) => {
   return (
     <div className="component">
       <p>Child</p>
