@@ -1,7 +1,7 @@
-import LessonRoot13 from "../Lessons/6-ref/3-callback-ref/LessonRoot13";
+import LessonRoot14 from "../Lessons/7-portals/LessonRoot14";
 
 const App = () => (
-    <LessonRoot13/>
+    <LessonRoot14/>
 )
 
 export default App;

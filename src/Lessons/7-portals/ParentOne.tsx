@@ -1,6 +1,10 @@
 import React, { useEffect } from 'react'
 
-const ParentOne = (props) => {
+type ParentOneProps = {
+  renderedHandler: () => void;
+}
+
+const ParentOne: React.FC<ParentOneProps> = (props) => {
 
   useEffect(() => {props.renderedHandler();}, [])
 
